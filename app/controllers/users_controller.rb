@@ -1,9 +1,9 @@
 class UsersController < ApplicationController
     def list
-        @users = Hometask.all
+        @users = User.all
     end
 
     def show
-        @user = Hometask.find(params[:id])
+        @user = User.find(params[:id])
     end   
 end
